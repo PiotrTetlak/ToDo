@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: sans-serif;
+    margin: 10vh 25vw;
+    padding: 50px;
+    text-align: center;
+    background-color: #2a2929;
+    border-radius: 50px;
+    color: white;
+}
+
+h1 {
+    margin: 20px;
+}
+
+button {
+    padding: 3px 10px;
+    background: #4444c9;
+    color: whitesmoke;
+    transition: 0.1s;
+    border: 3px solid #161677;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #8888ea;
+}
+
+.form {
+    display: inline-block;
+}
+
+.btns {
+    display: inline-block;
+    width: 120px;
+    margin: 5px 10px;
+}
+
+.task {
+    display: inline-block;
+    border-radius: 10px;
+    padding: 0 5px;
+    width: calc(95% - 235px);
+}
+
+p.todo {
+    text-align: justify;
+    padding: 2px 5px;
+}
+
+.newTask {
+    margin-bottom: 20px;
+}
+
+.record {
+    margin-bottom: 10px;
+    padding: 5px 0;
+    border: 3px solid whitesmoke;
+    border-radius: 10px;
+}
+
+input {
+    width: 40%;
+}
+
+.saveBtn {
+    background-color: #009100;
+    border: 3px solid #065206;
+}
+.saveBtn:hover {
+    background: #0eab0e;
+}
+
+.eraseBtn {
+    background-color: #be0808;
+    border: 3px solid #6b0505;
+}
+.eraseBtn:hover {
+    background: #fa2020;
+}
+
+.check{
+    width: 100px;
+}
+
+#value{
+    filter: grayscale(0.95);
+    color: #4f4c4c;
+}

@@ -1,0 +1,26 @@
+<form class="newTask" action="/" method="POST" >
+    <label>
+        <input name="todo" required>
+        <button type="submit" class="saveBtn"> Zapisz zadanie</button>
+    </label>
+</form>
+
+
+{{#each task}}
+    <div class="record" {{#if this.check}}id="value"{{/if}}>
+        <form class="form" method="POST" action="/{{this.id}}?_method=PATCH">
+            <button type="submit" name="check" value=true class="saveBtn check">Zrobione {{#if this.check}}✔{{/if}}</button>
+        </form>
+        <div class="task"><p class="todo">{{this.todo}}</p></div>
+        <div class="btns">
+            <form class="form" method="POST" action="/{{this.id}}?_method=DELETE">
+                <button type="submit" class="eraseBtn">usuń</button>
+            </form>
+            <form class="form" method="GET" action="/update/{{this.id}}">
+                <button type="submit" {{#if this.check}}disabled{{/if}}>zmień</button>
+            </form>
+        </div>
+    </div>
+
+
+{{/each}}
